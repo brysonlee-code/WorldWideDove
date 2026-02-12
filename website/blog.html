@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archive &mdash; The Worldwide Dove</title>
+    <meta name="description" content="Dispatches from The Worldwide Dove — health and technology journalism, delivered with clarity and conviction.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,700&family=Inter:wght@200;300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">THE WORLDWIDE DOVE</a>
+            <div class="nav__links is-desktop">
+                <a href="index.html#scroll" class="nav__link">The Scroll</a>
+                <a href="index.html#messenger" class="nav__link">The Messenger</a>
+                <a href="blog.html" class="nav__link">The Archive</a>
+                <a href="index.html#dispatches" class="nav__link">Dispatches</a>
+                <a href="index.html#covenant" class="nav__link nav__link--cta">Receive the Scroll</a>
+            </div>
+            <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="nav__mobile" id="mobileMenu">
+            <div class="nav__mobile-inner">
+                <a href="index.html#scroll" class="nav__mobile-link">The Scroll</a>
+                <a href="index.html#messenger" class="nav__mobile-link">The Messenger</a>
+                <a href="blog.html" class="nav__mobile-link">The Archive</a>
+                <a href="index.html#dispatches" class="nav__mobile-link">Dispatches</a>
+                <a href="index.html#covenant" class="nav__mobile-cta">Receive the Scroll</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header" data-animate="fade-up">
+        <div class="container">
+            <div class="blog-header__dove">
+                <img src="dove-letter-transparent.png" alt="The Dove" class="blog-header__dove-img">
+            </div>
+            <p class="blog-header__numeral">VII</p>
+            <p class="blog-header__chapter">The Archive</p>
+            <h1 class="blog-header__heading">Dispatches from the Dove</h1>
+            <p class="blog-header__subtitle">Long-form reporting on the breakthroughs shaping human health</p>
+        </div>
+    </header>
+
+    <!-- Filter Bar -->
+    <div class="container">
+        <div class="blog-filter">
+            <button class="blog-filter__tag is-active">All</button>
+            <button class="blog-filter__tag">Biotech</button>
+            <button class="blog-filter__tag">AI &amp; Digital Health</button>
+            <button class="blog-filter__tag">Longevity</button>
+            <button class="blog-filter__tag">Wearables</button>
+            <button class="blog-filter__tag">Policy</button>
+        </div>
+    </div>
+
+    <!-- Article List -->
+    <div class="blog-list">
+
+        <article class="blog-list__item" data-animate="fade-up">
+            <a href="article.html" class="blog-list__link">
+                <div class="blog-list__meta">
+                    <span class="blog-list__category">Biotech</span>
+                    <span class="blog-list__date">12 Feb 2026</span>
+                </div>
+                <h2 class="blog-list__title">CRISPR 3.0: The Gene Editors That Could Rewrite Inherited Disease</h2>
+                <p class="blog-list__excerpt">A new generation of base and prime editors promises to correct single-letter mutations without cutting DNA — and the first human trials are already underway.</p>
+            </a>
+        </article>
+        <div class="blog-list__rule"></div>
+
+        <article class="blog-list__item" data-animate="fade-up">
+            <a href="article.html" class="blog-list__link">
+                <div class="blog-list__meta">
+                    <span class="blog-list__category">AI &amp; Digital Health</span>
+                    <span class="blog-list__date">5 Feb 2026</span>
+                </div>
+                <h2 class="blog-list__title">The Diagnostic Algorithm That Outperformed 200 Radiologists</h2>
+                <p class="blog-list__excerpt">Google DeepMind's latest imaging model detected early-stage lung nodules with 94.3% accuracy in a landmark multi-site clinical trial spanning 14 countries.</p>
+            </a>
+        </article>
+        <div class="blog-list__rule"></div>
+
+        <article class="blog-list__item" data-animate="fade-up">
+            <a href="article.html" class="blog-list__link">
+                <div class="blog-list__meta">
+                    <span class="blog-list__category">Longevity</span>
+                    <span class="blog-list__date">29 Jan 2026</span>
+                </div>
+                <h2 class="blog-list__title">Rapamycin at Low Doses: The Longevity Drug Hiding in Plain Sight</h2>
+                <p class="blog-list__excerpt">Originally an immunosuppressant, rapamycin is now the subject of a dozen clinical trials investigating its potential to slow biological aging in healthy adults.</p>
+            </a>
+        </article>
+        <div class="blog-list__rule"></div>
+
+        <article class="blog-list__item" data-animate="fade-up">
+            <a href="article.html" class="blog-list__link">
+                <div class="blog-list__meta">
+                    <span class="blog-list__category">Wearables</span>
+                    <span class="blog-list__date">22 Jan 2026</span>
+                </div>
+                <h2 class="blog-list__title">Continuous Glucose Monitors Go Mainstream — and the Data Is Revelatory</h2>
+                <p class="blog-list__excerpt">Once reserved for diabetics, CGMs are now worn by biohackers, athletes, and executives. What the real-time glucose data reveals about metabolic health may surprise you.</p>
+            </a>
+        </article>
+        <div class="blog-list__rule"></div>
+
+        <article class="blog-list__item" data-animate="fade-up">
+            <a href="article.html" class="blog-list__link">
+                <div class="blog-list__meta">
+                    <span class="blog-list__category">Policy</span>
+                    <span class="blog-list__date">15 Jan 2026</span>
+                </div>
+                <h2 class="blog-list__title">The FDA's Accelerated Approval Problem: Speed vs. Safety</h2>
+                <p class="blog-list__excerpt">A growing number of drugs reach patients before confirmatory trials are complete. We examine the trade-offs, the withdrawals, and the patients caught in between.</p>
+            </a>
+        </article>
+        <div class="blog-list__rule"></div>
+
+        <article class="blog-list__item" data-animate="fade-up">
+            <a href="article.html" class="blog-list__link">
+                <div class="blog-list__meta">
+                    <span class="blog-list__category">Biotech</span>
+                    <span class="blog-list__date">8 Jan 2026</span>
+                </div>
+                <h2 class="blog-list__title">mRNA Beyond Vaccines: The Platform That Could Treat Cancer, Heart Disease, and Rare Genetic Disorders</h2>
+                <p class="blog-list__excerpt">Moderna and BioNTech are betting their futures on mRNA therapeutics far beyond COVID — from personalized cancer vaccines to in-vivo protein replacement therapies.</p>
+            </a>
+        </article>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a href="index.html" class="footer__logo">THE WORLDWIDE DOVE</a>
+                <div class="footer__links">
+                    <a href="index.html#scroll">The Scroll</a>
+                    <a href="index.html#messenger">The Messenger</a>
+                    <a href="blog.html">The Archive</a>
+                    <a href="index.html#dispatches">Dispatches</a>
+                </div>
+                <div class="footer__socials">
+                    <a href="#">Li</a>
+                    <a href="#">X</a>
+                    <a href="#">Ig</a>
+                </div>
+            </div>
+            <div class="footer__rule"></div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 The Worldwide Dove &mdash; A Neuroplastic Labs Publication</p>
+                <div class="footer__legal">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Editorial Standards</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
