@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title From PDF | The Worldwide Dove</title>
+    <meta name="description" content="Sub-headline summary from the PDF content.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=Inter:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Progress Bar: Visual cue of reading depth */
+        #progress-bar {
+            position: fixed; top: 0; left: 0; width: 0%; height: 4px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            z-index: 1001; transition: width 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="progress-bar"></div>
+
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">THE WORLDWIDE DOVE</a>
+            <div class="nav__links is-desktop">
+                <a href="blog.html" class="nav__link">Archive</a>
+                <a href="index.html#covenant" class="nav__link nav__link--cta">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header container--narrow">
+        <div class="article-header__meta" style="letter-spacing: 2px; text-transform: uppercase; font-size: 12px; margin-bottom: 20px;">
+            <span class="article-header__category" style="color: #0072ff; font-weight: 600;">DISPATCH No. 04</span>
+            <span style="margin: 0 10px;">|</span>
+            <span class="article-header__date">12 FEB 2026</span>
+        </div>
+        
+        <h1 class="article-header__title" style="font-family: 'Bodoni Moda', serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 30px;">
+            PASTE_HEADLINE_FROM_PDF
+        </h1>
+        
+        <p class="article-header__dek" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 20px; color: #444; margin-bottom: 40px;">
+            PASTE_ONE_SENTENCE_SUMMARY_OF_PDF
+        </p>
+        <div class="article-header__rule" style="height: 1px; background: #eee; width: 100%;"></div>
+    </header>
+
+    <main class="article-body container--narrow" style="padding-top: 60px;">
+        <p class="article-body__lede article-body__dropcap">
+            PASTE_FIRST_PARAGRAPH_HERE
+        </p>
+
+        <h3 class="article-body__subhead">PASTE_SECTION_HEADING</h3>
+        <p>PASTE_CONTENT_BLOCK</p>
+
+        <blockquote class="article-body__pullquote">
+            "PASTE_HIGH_IMPACT_QUOTE"
+        </blockquote>
+
+        <p>PASTE_CLOSING_TEXT</p>
+    </main>
+
+    <div class="container--narrow" style="text-align:center; padding: 80px 0;">
+        <img src="dove-letter-transparent.png" alt="NPL Dove" style="width: 80px; margin-bottom: 20px;">
+        <p style="font-family: 'Cormorant Garamond'; font-size: 1.2rem; font-style: italic;">
+            Researched with Rigor. Written with Scripture.
+        </p>
+    </div>
+
+    <script>
+        // UX Logic: Reading Progress Tracker
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
